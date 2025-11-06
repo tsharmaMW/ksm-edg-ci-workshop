@@ -44,7 +44,7 @@ jobs:
       - name: Run all tests using buildtool
         uses: matlab-actions/run-build@v2
         with:
-          tasks: test(BaseRevision=tempname)
+          tasks: test(RunOnlyImpactedTests=tempname)
 
       # - name: Upload test results
       #   uses: actions/upload-artifact@v4
